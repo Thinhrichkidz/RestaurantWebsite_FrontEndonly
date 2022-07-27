@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+    *,*:before, *:after{box-sizing: border-box;}
+    @font-face{
+	font-family:"helvetica-neue-regular";
+	src: url("../font/helvetica-neue-regular.ttf") format("woff"),
+		url("../font/helvetica-neue-regular.ttf") format("truetype")
+	}
+    body {font-size: 1.4rem;font-family:"helvetica-neue-regular";}
+
+    
+    .sp-orgatech ul {list-style: none; padding: 0; margin: 0;}
+    .sp-orgatech1 ul {list-style: none; padding: 0; margin: 0;}
+    .sp-orgatech2 ul {list-style: none; padding: 0; margin: 0;}
+    .sp-orgatech3 ul {list-style: none; padding: 0; margin: 0;}
+    .sp-orgatech li {background-color: #fff; min-height: 150px;border: solid #ddd 1px;border-radius: 10px;}
+    .sp-orgatech1 li {background-color: #fff; min-height: 150px;border: solid #ddd 1px;border-radius: 10px;}
+    .sp-orgatech2 li {background-color: #fff; min-height: 150px;border: solid #ddd 1px;border-radius: 10px;}
+    .sp-orgatech3 li {background-color: #fff; min-height: 150px;border: solid #ddd 1px;border-radius: 10px;}
+    .sp-orgatech a {text-decoration: none; color: #3d2b1f;text-align: center;}
+    .sp-orgatech1 a {text-decoration: none; color: #3d2b1f;text-align: center;}
+    .sp-orgatech2 a {text-decoration: none; color: #3d2b1f;text-align: center;}
+    .sp-orgatech3 a {text-decoration: none; color: #3d2b1f;text-align: center;}
+    .sp-orgatech a span{color:red;}
+    .sp-orgatech1 a span{color:red;}
+    .sp-orgatech2 a span{color:red;}
+    .sp-orgatech3 a span{color:red;}
+    .sp-orgatech img {width: 60%;}
+    .sp-orgatech1 img {width: 60%;}
+    .sp-orgatech2 img {width: 60%;}
+    .sp-orgatech3 img {width: 60%;}
+    .sp-orgatech  button{background-color: #9d6139;color: #fff;border: none;width: 60%;
+        text-align:center;justify-content:center;border-radius: 5px;margin-left:50%;transform: translate(-50%,-50%);margin-top: 10px;}
+    .sp-orgatech1  button{background-color: #9d6139;color: #fff;border: none;width: 60%;
+        text-align: center;justify-content:center;border-radius: 5px;margin-left:50%;transform: translate(-50%,-50%);margin-top: 10px;}
+    .sp-orgatech2  button{background-color: #9d6139;color: #fff;border: none;width: 60%;
+        text-align: center;justify-content:center;border-radius: 5px;margin-left:50%;transform: translate(-50%,-50%);margin-top: 10px;}
+    .sp-orgatech3  button{background-color: #9d6139;color: #fff;border: none;width: 60%;
+        text-align: center;justify-content:center;border-radius: 5px;margin-left:50%;transform: translate(-50%,-50%);margin-top: 10px;}
+
+/*=================kết thúc phần sản phẩm========================*/
+
+    .tieu-de {list-style: none; padding: 0; margin: 0 0 10px 0;overflow: hidden;margin-top: 25px;}
+    .tieu-de li{color: #000; margin: 10px 10px 10px 0;padding: 10px;text-align: center;justify-content: center;}
+
+    .tieu-de1 {list-style: none; padding: 0; margin: 0 0 10px 0;overflow: hidden;margin-top: 25px;}
+    .tieu-de1 li{color: #000; margin: 10px 10px 10px 0;padding: 10px;text-align: center;justify-content: center;}
+
+    .tieu-de2 {list-style: none; padding: 0; margin: 0 0 10px 0;overflow: hidden;margin-top: 25px;}
+    .tieu-de2 li{color: #000; margin: 10px 10px 10px 0;padding: 10px;text-align: center;justify-content: center;}
+
+    .tieu-de3 {list-style: none; padding: 0; margin: 0 0 10px 0;overflow: hidden;margin-top: 25px;}
+    .tieu-de3 li{color: #000; margin: 10px 10px 10px 0;padding: 10px;text-align: center;justify-content: center;}
+    
+    .tieu-de4 {list-style: none; padding: 0; margin: 0 0 10px 0;overflow: hidden;margin-top: 25px;margin-left: 15px;
+                color: #000;padding: 10px;text-align: center;justify-content: center;}
+
+    .tieu-de li{font-size: 1.6rem}
+    .tieu-de1 li{font-size: 1.6rem}
+    .tieu-de2 li{font-size: 1.6rem}
+    .tieu-de3 li{font-size: 1.6rem}
+    .tieu-de4 {font-size: 1.6rem}
+    .our-farm0 {background-color: aquamarine;}
+    .our-farm1 {background-color: royalblue;}
+    .our-farm2 {background-color: chocolate;}
+    .our-farm0, .our-farm1, .our-farm2{height: 200px; position: relative; display: block;
+        background-repeat:no-repeat;background-size: cover;color: #fff;text-align:center;margin-left: auto;}
+    .h1,.h2, .h3{margin-top: 25%;font-size: 1.8rem;}
+    .abc {margin-left: -20px ;margin-right: -10px;}
+    .our-farm0{background-image: url("../img/our-farm/vct1.jpg")}
+    .our-farm1{background-image: url("../img/our-farm/vct2.jpg")}
+    .our-farm2{background-image: url("../img/our-farm/vct3.jpg")}
+@media screen and (max-width:767px){
+    .tieu-de li{font-size: 1.2rem}
+    .tieu-de1 li{font-size: 1.2rem}
+    .tieu-de2 li{font-size: 1.2rem}
+    .tieu-de3 li{font-size: 1.2rem}
+    .tieu-de4 {font-size: 1.2rem}
+    .our-farm0, .our-farm1, .our-farm2{margin-bottom: 5px;}
+}
+
+@media screen and (min-width:768px){
+    .sp-orgatech {width: 100%;}
+    .sp-orgatech1 {width: 100%;}
+    .sp-orgatech2 {width: 100%;}
+    .sp-orgatech3 {width: 100%;}
+    .sp-orgatech  ul{display: flex;}
+    .sp-orgatech1 ul{display: flex;}
+    .sp-orgatech2 ul{display: flex;}
+    .sp-orgatech3 ul{display: flex;}
+    .sp-orgatech li:nth-child(2){margin-left: 15px;margin-right: 15px;}
+    .sp-orgatech1 li:nth-child(2){margin-left: 15px;margin-right: 15px;}
+    .sp-orgatech2 li:nth-child(2){margin-left: 15px;margin-right: 15px;}
+    .sp-orgatech3 li:nth-child(2){margin-left: 15px;margin-right: 15px;}
+    .sp-orgatech li{width: calc((100% - 30px) / 3);}
+    .sp-orgatech1 li{width: calc((100% - 30px) / 3);}
+    .sp-orgatech2 li{width: calc((100% - 30px) / 3);}
+    .sp-orgatech3 li{width: calc((100% - 30px) / 3);}
+
+}
+
+@media screen and (min-width:992px){
+    .our-farm1, .our-farm2{height: 200px;}
+    .our-farm0{height: auto;}
+    
+}
+
+    
+    

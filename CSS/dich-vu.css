@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+	font-family:"helvetica-neue-regular";
+	src: url("../font/helvetica-neue-regular.ttf") format("woff"),
+		url("../font/helvetica-neue-regular.ttf") format("truetype")
+	}
+    body {font-size: 1rem;font-family:"helvetica-neue-regular";}
+.the-menu a, .the-menu button {font-size: 1.4rem; }
+
+.background-dich-vu {padding: 15px 0 50px 0; width: 100%; margin: 16px 0 40px 0;
+    background-image: url("../img/bg-line-art0.png");background-size: cover;background-repeat: repeat-y;
+    background-position-y: -250px; box-sizing: border-box;
+}
+.content-dich-vu {margin: 20px auto 30px auto; padding-right: 40px; padding-left: 40px;}
+
+.background-dich-vu .content-dich-vu h1 {text-align: center;margin-bottom: 40px; font-size: 2.9rem;}
+
+@media screen and (min-width : 768px){
+    .background-dich-vu .content-dich-vu h1 {font-size: 3.5rem;}
+}
+
+@media screen and (min-width : 768px){
+    .background-dich-vu .content-dich-vu h1 {font-size: 4rem;}
+}

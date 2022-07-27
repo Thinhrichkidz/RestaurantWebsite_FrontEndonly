@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+    *,*:before, *:after{box-sizing: border-box;}
+    @font-face{
+	font-family:"helvetica-neue-regular";
+	src: url("../font/helvetica-neue-regular.ttf") format("woff"),
+		url("../font/helvetica-neue-regular.ttf") format("truetype")
+	}
+    body {font-size: 1.4rem;font-family:"helvetica-neue-regular";}
+:root {
+    --color2:#9d6139;
+    --color1:#3d2b1f;
+    --fontSize1: 1.2rem;
+    --fontSize2: 1.6rem;
+    --stdDistance: 15px; /*khoảng cách chuẩn*/
+}
+body{background-color: #fef8e4;}
+/* ========================================================================== */
+.hinh1 {background-size:cover ; border-radius: 20px; height:200px; background-position: center; padding-top: 30px; width: 100%; 
+	background-image: url("../img-gioithieu/hinh6.png");
+		display: flex; justify-content: center; align-items: center;
+	}
+.hinh1 h1 {color: white;}
+
+/* =====PHẦN MÔ TẢ============ */
+.mo-ta .tieude1 {display: flex; justify-content: center; padding-top:30px;  
+                 align-items: center;font-size: var(--fontSize2); }
+.mo-ta p {justify-content: center; align-items: center; 
+          text-align: center; font-size: var(--fontSize1);}
+.mo-ta {border-bottom: solid 2px var(--color1); margin-bottom: var(--stdDistance) }
+
+/* =====PHẦN LIST NỘI DUNG============ */
+    .list-nd ul {display: flex; flex-flow: row wrap; margin-bottom: 0;list-style: none;}
+    .list-nd img {width: 100%; float: none; margin-right: 0;}
+    .list-nd p {margin-bottom: 0; text-decoration: none; 
+        color: #000;font-size: var(--fontSize1);  }
+
+.banner .nen1 {height: 300px; border-radius: 20px;
+	
+	background-size: cover;
+	background-position: center; margin-top: 15px;
+	display: flex; align-items: center; margin-bottom: var(--stdDistance);
+}
+.banner .nen1 a {display: block; width: 30%; margin: 0 auto;}
+
+@media screen and (min-width: 768px){
+.list-nd ul {list-style: none; padding: 0; margin: var(--stdDistance) 0}
+.list-nd a {text-decoration: none; display: block;color: #000;}
+.list-nd p {font-size: var(--fontSize1);}
+.list-nd .nd1 img, .nd3  img {width: 50%; float:right; margin-left: 10px; }
+.list-nd .nd2 img, .nd4  img {width: 50%; float:left; margin-right: 10px; }
+    
+}/*đây là dấu đóng @768*/
+@media screen and (min-width: 992px){
+.hinh1 {background-size:cover ; border-radius: 20px; height:400px; background-position: center; padding-top: 30px; width: 100%; 
+		display: flex; justify-content: center; align-items: center;
+	}
+	.list-nd a {display: flex; align-items: center; }
+.list-nd .nd1 img, .nd3 img,
+.list-nd .nd2 img, .nd4 img {float:none; margin-left: 0; margin-right: 0;}
+	.list-nd .nd1 a, .list-nd .nd3 a {flex-flow: row-reverse}
+
+    
+}/*đây là dấu đóng @992*/
+
+
+
+
+
+
+
+

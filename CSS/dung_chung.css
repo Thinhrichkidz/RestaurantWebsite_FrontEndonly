@@ -1,0 +1,209 @@
+@charset "utf-8";
+/* CSS Document */
+/* các dòng dưới đây lfà tạm thời, bỏ đi khi hoàn tất */
+/*.nut {background-color: #F4989A;}*/
+/*.logo {background: #3d2b1f}*/
+/*
+.social-links {background-color: #dcd40c;}
+.footer-menu {background-color: #726f6f;}
+.the-menu {background-color: #C24444;}
+.banner-header {background-color: #726f6f;}
+*/
+/*.body {background-color: lightblue; height: 500px}*/
+.khoi-header {background-color: #fff}
+/*.frm-sch {background-color: #fff;}*/
+/*header {background-color: #4B4D4F}*/
+
+/*NOTE
+-Phần body nhớ div khối trắng trong phần "khoi-header"
+*/
+
+
+
+
+:root{
+	
+	--color1: #9d6139;
+	--color2: #3d2b1f;
+	--fontSize1: 1.2rem;
+	--fontSize2: 1.6rem;
+	--stdDistance: 15px;
+}
+/*===============================*/
+img, video {max-width: 100%}
+.logo img {width: 200px; padding-bottom: 10px}
+.khoi-header {border-radius: 30px; height: 100px; width: 100%; position: relative; margin-top: -30px}
+.frm-sch {padding: 30px 50px 15px 50px; position:relative; background-color: transparent}
+.container-1st {position: relative; margin-bottom: -80px;}
+.nut, .logo {height: 80px; display: flex; justify-content: center; align-items: center; align-content: center;}
+.frm-sch form {
+	display: flex; flex-flow: row wrap; align-items: center;
+}
+.frm-sch input[type="search"] {
+	padding: 10px 40px 10px 10px; width: 100%; border: solid 1px #bbb; border-radius: 30px; font-size: var(--fontSize1);
+}
+.frm-sch input[type="submit"] {
+	width: 24px; height: 24px; background-color: transparent; border: none; text-indent: -9999px; margin-left: -40px; background-image: url("../img/search-solid.svg");
+}
+
+.banner-header {height:100%;}
+.banner-header img {width:100%; background-size: cover; background-position: center;}
+.gh a {display: none }
+.gh a span {display: none}
+.logo1 {display: none;}
+.dangnhap {display: none;}
+
+/*==================xử lý nút menu=====================*/
+*,*:before, *:after{box-sizing: border-box;}
+#n3v {width: 40px; height: 50px; border: none; background-color: transparent}
+#n3v > div {background-color: #fff; height: 3px; margin-bottom: 5px;}
+#n3v .top {margin-top: 5px; transition: transform 0.3s ease-out, background-color 0.3s ease-out;}
+#n3v .mid {width: 70%; transition: opactity 0.3s ease-out;}
+#n3v .bot {width: 30%; transition: width 0.3s ease-out, transform 0.3s ease-out, background-color 0.3s ease-out;}
+.show-menu #n3v .mid {opacity: 0}
+.show-menu #n3v .top {transform: translate(0,8px) rotate(45deg); background-color: var(--color1)}
+.show-menu #n3v .bot {width: 100%; transform: translate(0,-8px) rotate(-45deg); background-color: var(--color1)}
+
+.the-menu {width: 100%; height: 100%; background-color: #fff; position: fixed; top: 0; left: 0; z-index: 98;clip-path: circle(0 at 0 0); transition: clip-path 0.3s ease-out;}
+.show-menu .the-menu {clip-path: circle(150% at 0 0);}
+.the-menu ul {list-style: none; padding: 0; margin: 0 var(--stdDistance); display: block;}
+.the-menu > ul {margin-top: 60px;}
+.show-menu #n3v {position: fixed; z-index: 99}
+
+.the-menu a, .the-menu button {color: #fff; background-color: var(--color); text-decoration: none; display: block; padding: 10px; border: none; border-radius: 10px; margin-top: 10px;justify-content: center;}
+
+
+.the-menu button {width: 100%; border: none;display: flex; text-align: left; justify-content: space-between; align-items: center; background-color: var(--color1); color: #000; padding: 10px 20px 10px 20px;}
+.the-menu button:after{content: "\f107";font-weight: 900; font-family: "Font Awesome 5 Free"; 
+		font-size: var(--size1); transition: transform 0.3s ease-out; background-color: var(--color1); color: #000;}
+.the-menu ul a {padding-left: 20px; color: #000; background-color: var(--color1);}
+.the-menu .opening{color: #000; text-align: left;}
+.the-menu .opening:after{transform: rotate(180deg)}
+button:focus{outline: none;}
+
+/*===========================footer===========================*/
+footer {background-color: var(--color2); color: #fff; padding-top: var(--stdDistance); padding-bottom: var(--stdDistance); display: flex; flex-flow: row wrap;}
+footer a {color: #fff; text-decoration: none; font-size: 0.8rem}
+footer li {font-size: 0.8rem;}
+footer p {font-size: 1rem}
+
+footer .comp-name img {width: 100px; margin-left: 10px;}
+footer .info {padding-left: 10px;}
+footer .info ul {list-style: none; margin-left: 0px;}
+
+footer .info .social-links {padding: 15px; height: 150px}
+footer .info .social-links ul {list-style: none; padding: 0; margin-left: 0px; display: flex; flex-flow: flex-end ;}
+footer .info .social-links li {padding: 10px; font-size: var(--fontSize2); font-size: 1.2rem}
+footer .info .social-links a { font-size: 1.2rem}
+footer .info .social-links p {margin-left: -15px}
+
+
+footer .footer-menu {padding: 30px 0px 0px 10px; list-style: none}
+footer .footer-menu ul {list-style: none;  margin-left: -10px;}
+footer .footer-menu li {padding-top: var(--stdDistance);}
+footer .footer-menu p {margin-left: 10px}
+
+footer .footer-menu .footer-policy {padding: 30px 0px 0px 10px; list-style: none}
+footer .footer-menu .footer-policy ul {list-style: none; margin-left: -20px;}
+footer .footer-menu .footer-policy li {padding-top: var(--stdDistance)}
+footer .footer-menu .footer-policy p {margin-left: 0px}
+
+
+@media screen and (min-width: 768px) {
+	/*ap dung tu co 768px tro len*/
+.gh a {display: none }
+.gh a span {display: none}
+.logo1 {display: none;}
+.dangnhap {display: none;}
+	
+footer .comp-name img {width: 100px; margin-left: 30px;}
+footer .info {padding-left: 30px;}
+	
+footer a {color: #fff; text-decoration: none; font-size: 1rem; display: flex; flex-flow: row wrap}
+footer li {font-size: 1rem;}
+footer p {font-size: 1.2rem}	
+	
+footer .footer-menu {padding: 30px 0px 0px 50px; list-style: none; margin-top: 67px}
+footer .footer-menu ul {list-style: none;  margin-left: -10px;}
+footer .footer-menu li {padding-top: var(--stdDistance);}
+footer .footer-menu p {margin-left: 10px}
+	
+	
+	
+footer .footer-policy {margin-left: 250px; margin-top: -246px}
+
+footer .footer-menu .footer-policy {padding: 30px 0px 0px 10px; list-style: none; margin-right: 10px;}
+footer .footer-menu .footer-policy ul {list-style: none; margin-left: -20px;}
+footer .footer-menu .footer-policy li {padding-top: var(--stdDistance)}
+footer .footer-menu .footer-policy p {margin-left: 0px}
+
+
+	
+} /*Ket thuc phan hien thi 768px*/
+
+@media screen and (min-width: 992px){
+	.logo {width: 100%}
+	.logo img {width: 80%; display: block; position: relative; margin: 20px auto 10px auto; align-items: center}
+	.frm-sch {padding: 30px 50px 15px 70px; margin: -200px 0px 0px 120px ;position:relative; background-color: transparent}
+	
+	.the-menu {position: relative; clip-path: none; height: auto; background-color: transparent; margin: -100px 0px 0px 130px}
+    .the-menu ul{list-style: none; margin: 0; display: flex;}
+    .the-menu a {color: #000; border: none;}
+
+	.the-menu button {background-color: transparent}
+	.the-menu button:after {background-color: transparent}
+	.the-menu ul a {background-color: transparent}
+	.the-menu a:hover { color:#000;}
+	.the-menu li {position:relative; margin: 0px;}
+	.the-menu li ul {
+		background-color:#fff;
+		list-style:none; padding:0; margin:0;
+		position:absolute; left:0; top:100%; display:none;
+			}
+	.the-menu li ul a {width: 300px}
+	/*.the-menu ul a:hover {color:#3d2b1f;}
+    .the-menu button:hover{color: #3d2b1f;}*/
+	
+	.khoi-header {border-radius: 30px; height: 350px; width: 100%; position: relative; align-items: center; justify-content: center; margin-top: -30px}
+	.logo1 {display: block;}
+	.logo1 img {width: 200px; position: absolute}
+	.dangnhap {display: block; text-align: right; margin: -50px 20px 0px 0px}
+	.dangnhap a {text-decoration: none; color: #000; }
+	.gh a {position: relative; display: block; color: var(--color1); margin: -40px 0 0 600px}
+	.gh a span {position: absolute; display:block; width: 30px; height: 30px; background-color: rgba(0,0,0,0.2); border: none; border-radius: 50%;
+	text-align: center; line-height: 30px; top: -10px; right: -40px; text-decoration: none; color: var(--color1); font-weight: bold;
+	}
+	
+	
+
+	footer a:hover {color: #DDD}
+	
+
+}
+@media screen and (min-width: 1070px){
+
+	.gh a {margin: -40px 0px 0px 700px}
+
+}
+
+
+@media screen and (min-width: 1200px){
+
+	.gh a {margin: -40px 0px 0px 850px}
+
+@media screen and (min-width: 1400px){
+
+	.the-menu li {padding: 0px 20px 0px 20px}
+	.frm-sch {padding: 30px 50px 15px 70px; margin: -200px 0px 0px 150px ;position:relative; background-color: transparent}
+	.gh a {margin: -40px 0px 0px 1000px}
+	}
+@media screen and (min-width: 1500px){
+
+
+	.gh a {margin: -40px 0px 0px 1100px}
+	}
+@media screen and (min-width: 1700px){
+
+
+	.gh a {margin: -40px 0px 0px 1300px}
+	}
